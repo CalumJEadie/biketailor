@@ -13,26 +13,26 @@ Local Development
 Clone the repository.
 
 ```sh
-$ git clone git@github.com:CalumJEadie/biketailor.git
-$ cd biketailor
+git clone git@github.com:CalumJEadie/biketailor.git
+cd biketailor
 ```
 
 Boot up a local Virtual Machine using Vagrant.
 
 ```sh
-$ vagrant up
+vagrant up
 ```
 
 SSH into machine and install.
 
 ```sh
 # On host machine.
-$ vagrant ssh
+vagrant ssh
 # On guest machine.
-$ cd /vagrant
-$ virtualenv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
+cd /vagrant
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ### Usage
