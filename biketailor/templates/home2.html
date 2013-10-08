@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Find a bike you'll love</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" rel="stylesheet">
@@ -28,55 +28,52 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <div class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Bike Tailor</a>
         </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
       </div>
-    </div>
+    </div> -->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <h1 class="text-center">Find a bike you'll love</h1>
+
+        <p class="text-center">Bike Tailor recommends 3 bikes to fit your lifestyle & budget.</p>
+
+        <p class="text-center">And it’s completely free.</p>
+
+        <p class="text-center"><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container marketing">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img src="{% static "img/button1.png" %}" />
+          <h2 class="text-center">SAVE TIME</h2>
+          <br/>
+          <p class="text-center">We search bike shops, auctions & classifieds to recommend bikes to fit your needs. Tell us a few details and we’ll send you three bikes within 24 hours.</p>
+          <br/>
+          <p class="text-center"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img src="{% static "img/button2.png" %}" />
+          <h2 class="text-center">CUSTOM FOR YOU</h2>
+          <br/>
+          <p class="text-center">Your budget, your lifestyle, your personality. These are the most important things when buying a bike and you don’t want to compromise any of them.</p>
+          <br/>
+          <p class="text-center"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <img src="{% static "img/button3.png" %}" />
+          <h2 class="text-center">HONEST ADVICE</h2>
+          <br/>
+          <p class="text-center">Get unbiased help from people who know how bikes work. We’re independent from any shops and want to help you get a bike that will last.</p>
+          <br/>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
@@ -84,7 +81,6 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
       </footer>
     </div> <!-- /container -->
 
