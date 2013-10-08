@@ -1,7 +1,7 @@
-body {
+/*body {
   padding-top: 0px;
   padding-bottom: 0px;
-}
+}*/
 
 .jumbotron {
     background-image: url('../img/bike-splash.jpg');
@@ -13,9 +13,9 @@ body {
 .jumbotron h1 {
     text-shadow: 2px 2px 2px black;
     color: white;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
     font-size: 4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.col-md-4em;
 }
 
 .jumbotron p {
@@ -33,14 +33,24 @@ body {
 
 
 .jumbotron .panel {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.marketing {
+    margin-top: 50px;
 }
 
 .marketing img {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
 }
 
 .marketing .col-md-4 {
     text-align: center;
+}
+
+.marketing p,
+.marketing h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

@@ -30,24 +30,22 @@
 
   <body>
 
-    <!-- <div class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Bike Tailor</a>
-        </div>
-      </div>
-    </div> -->
-
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
+
+
         <h1 class="text-center">Find a bike you'll love</h1>
 
-        <p class="text-center">Bike Tailor recommends bikes to fit your lifestyle and budget.</p>
+        <div class="panel">
 
-        <!-- <p class="text-center">And it’s completely free.</p> -->
+          <p class="text-center">Bike Tailor recommends bikes to fit your lifestyle and budget.</p>
 
-        <p class="text-center"><a data-toggle="modal" href="#myModal" class="btn btn-success btn-xl" role="button">Recommend me three bikes &raquo;</a></p>
+          <!-- <p class="text-center">And it’s completely free.</p> -->
+
+          <p class="text-center"><a data-toggle="modal" href="#myModal" class="btn btn-success btn-xl" role="button">Recommend me three bikes &raquo;</a></p>
+
+      </div>
 
       </div>
     </div>
@@ -58,25 +56,19 @@
         <div class="col-md-4">
           <img src="{% static "img/button1.png" %}" />
           <h2 class="text-center">SAVE TIME</h2>
-          <br/>
           <p class="text-center">We search bike shops, auctions & classifieds to recommend bikes to fit your needs. Tell us a few details and we’ll send you three bikes within 24 hours.</p>
-          <br/>
           <p class="text-center"><a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg" href="#" role="button">Save me time &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <img src="{% static "img/button2.png" %}" />
           <h2 class="text-center">CUSTOM FOR YOU</h2>
-          <br/>
           <p class="text-center">Your budget, your lifestyle, your personality. These are the most important things when buying a bike and you don’t want to compromise any of them.</p>
-          <br/>
           <p class="text-center"><a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg" href="#" role="button">Find a bike to fit me &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <img src="{% static "img/button3.png" %}" />
           <h2 class="text-center">HONEST ADVICE</h2>
-          <br/>
           <p class="text-center">Get unbiased help from people who know how bikes work. We’re independent from any shops and want to help you get a bike that will last.</p>
-          <br/>
           <p><a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg" href="#" role="button">Get honest advice &raquo;</a></p>
         </div>
       </div>
@@ -84,6 +76,9 @@
       <hr>
 
       <footer>
+        <p class="text-center">
+          <img src="{% static "img/logo.png" %}" style="width: 150px; height: 150px;"/>
+        </p>
       </footer>
     </div> <!-- /container -->
 
