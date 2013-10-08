@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Find a bike you’ll love</title>
+    <title>Find a bike you'll love</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "bootstrap/css/carousel.css" %}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -19,153 +23,177 @@
       <script src="../../docs-assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link href="{% static "bootstrap/css/carousel.css" %"" rel="stylesheet">
-
-    <link href="{% static "css/home.css" %}"" rel="stylesheet">
+    <link href="{% static "css/home.css" %}" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Bike Tailor</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <body>
+
+    <!-- <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Bike Tailor</a>
         </div>
+      </div>
+    </div> -->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="text-center">Find a bike you'll love</h1>
+
+        <p class="text-center">Bike Tailor recommends three bikes to fit your lifestyle and budget.</p>
+
+        <p class="text-center">And it’s completely free.</p>
+
+        <p class="text-center"><a data-toggle="modal" href="#myModal" class="btn btn-success btn-lg" role="button">Recommend me three bikes &raquo;</a></p>
 
       </div>
     </div>
 
-
-    <!-- Carousel
-    ================================================== -->
-    <div class="carousel">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="{% static "img/bike-splash.jpg" %}">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Find a bike you’ll love</h1>
-              <br/>
-              <p>Bike Tailor recommends three bikes to fit your lifestyle and budget.</p>
-              <p>It's completely free.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
     <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
+      <!-- Example row of columns -->
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>SAVE TIME</h2>
-          <p>We search bike shops, auctions & classifieds to recommend bikes to fit your needs. Tell us a few details and we’ll send you three bikes within 24 hours.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>CUSTOM FOR YOU</h2>
-          <p>Your budget, your lifestyle, your personality. These are the most important things when buying a bike and you shouldn't have to compromise any of them.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>HONEST ADVICE</h2>
-          <p>Get unbiased help from people who know how bikes work. We’re independent from any shops and want to help you get a bike that will last.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="col-md-4">
+          <img src="{% static "img/button1.png" %}" />
+          <h2 class="text-center">SAVE TIME</h2>
+          <br/>
+          <p class="text-center">We search bike shops, auctions & classifieds to recommend bikes to fit your needs. Tell us a few details and we’ll send you three bikes within 24 hours.</p>
+          <br/>
+          <p class="text-center"><a data-toggle="modal" href="#myModal" class="btn btn-default" href="#" role="button">Save me time finding a bike &raquo;</a></p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="col-md-4">
+          <img src="{% static "img/button2.png" %}" />
+          <h2 class="text-center">CUSTOM FOR YOU</h2>
+          <br/>
+          <p class="text-center">Your budget, your lifestyle, your personality. These are the most important things when buying a bike and you don’t want to compromise any of them.</p>
+          <br/>
+          <p class="text-center"><a data-toggle="modal" href="#myModal" class="btn btn-default" href="#" role="button">Find a bike to fit me &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <img src="{% static "img/button3.png" %}" />
+          <h2 class="text-center">HONEST ADVICE</h2>
+          <br/>
+          <p class="text-center">Get unbiased help from people who know how bikes work. We’re independent from any shops and want to help you get a bike that will last.</p>
+          <br/>
+          <p><a data-toggle="modal" href="#myModal" class="btn btn-default" href="#" role="button">Give me honest advice &raquo;</a></p>
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <hr>
 
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
+    </div> <!-- /container -->
 
-    </div><!-- /.container -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <script type="text/javascript">var submitted=false;</script>
+        
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="$('#myModal').modal('hide')"></iframe>
+
+          <form class="form-horizontal" role="form" action="https://docs.google.com/a/calumjeadie.com/forms/d/1fcC_QesrpmPumF2qwloo6m9bQ3YI1vjR_ROljPf71oE/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+            <input name="entry.1736520148" type="hidden" value="name,email,budget,usage,extra" />
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Your budget, your lifestyle</h4>
+          </div>
+          <div class="modal-body">
+
+            <fieldset>
+
+              <legend>You</legend>
+
+              <div class="form-group">
+                <label for="inputName1" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input name="entry.1480650988" type="text" class="form-control" id="inputName1" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input name="entry.1467214857" type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                </div>
+              </div>
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Your budget</legend>  
+
+              <div class="form-group">
+
+                <label class="col-lg-2 control-label">Budget</label>
+
+                <div class="col-lg-10">
+
+                  <label class="radio-inline">
+                  <input name="entry.849090895" type="radio" id="budget1" value="_100"> < £100
+                </label>
+                <label class="radio-inline">
+                  <input name="entry.849090895" type="radio" id="budget2" value="100_200"> £100-200
+                </label>
+                <label class="radio-inline">
+                  <input name="entry.849090895" type="radio" id="budget3" value="200_300"> £200-300
+                </label>
+                <label class="radio-inline">
+                  <input name="entry.849090895" type="radio" id="budget3" value="300_400"> £300-400
+                </label>
+                <label class="radio-inline">
+                  <input name="entry.849090895" type="radio" id="budget3" value="400"> > £400
+                </label>
+
+              </div>
+
+              </div>
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Your lifestyle</legend>  
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">Usage</label>
+                <div class="col-lg-10">
+
+                  <textarea name="entry.181619501" class="form-control" rows="3" placeholder="What will you use your bike for?"></textarea>
+                </div>
+              </div>
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Anything else?</legend>  
+
+               <div class="form-group">
+                <label for="inputColour1" class="col-lg-2 control-label">Go mad!</label>
+                <div class="col-lg-10">
+                  <textarea name="entry.2101561028" class="form-control" rows="3" placeholder="Whether you've got a craving for a retro french racer, have been pining after a rainbow coloured single speed or just want to be sure you'll have a comfortable ride on cobbles let us know."></textarea>
+                </div>
+              </div>
+
+            </fieldset>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Recommend me three bikes</button>
+            </div>
+
+
+          </form>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
     <!-- Bootstrap core JavaScript
@@ -173,5 +201,23 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{% static "bootstrap/js/jquery.js" %}"></script>
     <script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+
+    <script type="text/javascript">
+      var GoSquared = {};
+      GoSquared.acct = "GSN-104136-V";
+      (function(w){
+        function gs(){
+          w._gstc_lt = +new Date;
+          var d = document, g = d.createElement("script");
+          g.type = "text/javascript";
+          g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+          var s = d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(g, s);
+        }
+        w.addEventListener ?
+          w.addEventListener("load", gs, false) :
+          w.attachEvent("onload", gs);
+      })(window);
+    </script>
   </body>
 </html>
