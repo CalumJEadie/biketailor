@@ -1,7 +1,7 @@
-/*body {
+body {
   padding-top: 0px;
-  padding-bottom: 0px;
-}*/
+  padding-bottom: 20px;
+}
 
 .jumbotron {
     background-image: url('../img/bike-splash.jpg');
@@ -53,4 +53,20 @@
 .marketing h2 {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.marketing p {
+    font-size: 18px;
+}
+
+/*.quote p {
+    font-size: 30px;
+}
+
+.quote small {
+    font-size: 20px;
+}*/
+
+.featurette-heading {
+    margin-top: 20px;
 }

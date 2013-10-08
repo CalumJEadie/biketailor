@@ -157,7 +157,7 @@
 
           <script type="text/javascript">var submitted=false;</script>
 
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="$('#myModal').modal('hide')"></iframe>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thanks/'}"></iframe>
 
           <form class="form-horizontal" role="form" action="https://docs.google.com/a/calumjeadie.com/forms/d/1fcC_QesrpmPumF2qwloo6m9bQ3YI1vjR_ROljPf71oE/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
 

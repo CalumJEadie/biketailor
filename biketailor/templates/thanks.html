@@ -1,0 +1,107 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Boom!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "bootstrap/css/carousel.css" %}" rel="stylesheet">
+    <link href="{% static "bootstrap/css/jumbotron.css" %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../docs-assets/js/html5shiv.js"></script>
+      <script src="../../docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="{% static "css/bootstrap-extensions.css" %}" rel="stylesheet">
+
+    <link href="{% static "css/home.css" %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4" style="text-align: center;">
+
+          <h1>Boom!</h1>
+
+          <br>
+
+
+          <img class="img-rounded" src="{% static "img/boom.gif" %}" style="width: 200px; height: 200px;"/>
+
+          <br>
+          <br>
+
+          <h3>Thanks for your response. We'll get back to you in 24 hours.</h3>
+
+          
+          <br>
+
+
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p class="text-center">
+          <!-- <a href="about/" class="">About</a> -->
+
+          <img src="{% static "img/logo.png" %}" style="width: 150px; height: 150px;"/>
+
+          <!-- <a href="contact/">Contact</a> -->
+        </p>
+      </footer>
+    </div> <!-- /container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static "bootstrap/js/jquery.js" %}"></script>
+    <script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+
+    <script type="text/javascript">
+      var GoSquared = {};
+      GoSquared.acct = "GSN-104136-V";
+      (function(w){
+        function gs(){
+          w._gstc_lt = +new Date;
+          var d = document, g = d.createElement("script");
+          g.type = "text/javascript";
+          g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+          var s = d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(g, s);
+        }
+        w.addEventListener ?
+          w.addEventListener("load", gs, false) :
+          w.attachEvent("onload", gs);
+      })(window);
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44542023-2', 'calumjeadie.com');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
