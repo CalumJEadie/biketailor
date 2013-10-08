@@ -1,0 +1,6 @@
+.jumbotron {
+    background-image: url('../img/bike-splash.jpg');
+    background-size: cover;
+    background-position: right bottom;
+    /*min-height: 300px;*/
+}
