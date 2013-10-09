@@ -19,4 +19,6 @@ urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name="home.html")),
 
     url(r'^thanks/$', TemplateView.as_view(template_name="thanks.html")),
+
+    url(r'^meme/$', TemplateView.as_view(template_name="meme.html")),
 )
