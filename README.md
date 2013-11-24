@@ -1,9 +1,27 @@
 Bike Tailor
 ===========
 
-http://biketailor.herokuapp.com
+A prototype for exploring buying decisions.
 
-http://biketailor.calumjeadie.com
+Screenshots
+-----------
+
+!["Home 1"](screenshots/home-1.png)
+
+!["Home 2"](screenshots/home-2.png)
+
+!["Capturing Needs"](screenshots/capturing-needs.png)
+
+Made with
+---------
+
+- Django
+- Vagrant
+- Heroku
+- Bootstrap
+- Google Forms
+
+---
 
 Local Development
 -----------------
